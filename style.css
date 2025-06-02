@@ -1,0 +1,90 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.add-habit-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#newHabitInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#addHabitBtn {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addHabitBtn:hover {
+    background-color: #4cae4c;
+}
+
+#habitList {
+    list-style: none;
+    padding: 0;
+}
+
+.habit-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.habit-item:last-child {
+    border-bottom: none;
+}
+
+.habit-item.completed .habit-name {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.habit-name {
+    flex-grow: 1;
+    cursor: pointer; /* Для кликабельности */
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
